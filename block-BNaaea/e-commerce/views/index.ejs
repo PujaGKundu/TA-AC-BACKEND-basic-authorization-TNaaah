@@ -1,0 +1,50 @@
+<% include partials/header-g.ejs %>
+
+<div class="container">
+  <h1>Register/Login to add products to cart</h1>
+  <div class="flex ai-start">
+    <div class="flex-30">
+      
+      <div class="sidenav">
+        <a href="/"><h2>E-Commerce</h2></a>
+        <h2>Categories</h2>
+        <div class="menu">
+          <a href="">Men</a>
+          <a href="">Women</a>
+          <a href="">Kids</a>
+        </div>  
+        <h2>Type</h2>
+        <div class="menu">
+          <a href="">Shirt</a>
+          <a href="">Dress</a>
+          <a href="">Saree</a>
+          <a href="">Watch</a>
+          <a href="">Tie</a>
+          <a href="">Jewellery</a>
+          <a href="">Churidar</a>
+        </div>
+      </div>      
+    </div>
+    <div class="flex-60">
+      <div class="grid">
+        <% items.sort().forEach(function(image) { %>
+        <div class="p-details">
+          <a href="/products/<%= image.id %>">
+            <div>
+              <img class="p-image" src="data:image/<%=image.image%>"/>
+            </div>
+              <div>
+                <h3><%= image.name %></h3>
+                <h4>Rs. <%= image.price %></h4>
+              </div>
+            </div>
+          </a>
+          <% }) %>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer.ejs %>
