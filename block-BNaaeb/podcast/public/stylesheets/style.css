@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.5;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+header {
+  box-shadow: 2px 2px 4px 2px rgb(235, 233, 233);
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1430px;
+  width: 100%;
+  margin: o auto;
+  padding: 0 32px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-30 {
+  flex: 1 1 30%;
+}
+
+.flex-60 {
+  flex: 1 1 60%;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.siderbar {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  padding: 2rem;
+}
+
+.btn {
+  padding: 0.3rem 0.5rem;
+  background-color: rgb(3, 92, 92);
+  margin: 0.3rem;
+  color: white;
+}
+
+form {
+  width: 350px;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px 2px rgb(230, 226, 226);
+  text-align: center;
+}
+
+input,
+.form {
+  width: 80%;
+  outline: none;
+  padding: 0.2rem;
+  margin: 0.5rem;
+}
+
+.red {
+  color: red;
+  font-size: 400;
+}

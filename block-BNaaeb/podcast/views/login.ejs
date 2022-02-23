@@ -1,0 +1,15 @@
+<% include partials/header.ejs %>
+
+<div class="container">
+  <form action="/register/login" method="post">
+    <h2>LogIn</h2>
+    <% if(error) { %>
+    <p class="red"><%= error %></p>
+    <% } %>
+    <input type="email" name="email" placeholder="Enter Email" />
+    <input type="password" name="password" placeholder="Enter Password" />
+    <button>LogIn</button>
+  </form>
+</div>
+
+<% include partials/footer.ejs %>
