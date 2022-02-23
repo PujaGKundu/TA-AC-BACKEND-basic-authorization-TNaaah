@@ -1,0 +1,38 @@
+<% include partials/header.ejs %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 m-auto">
+      <h1 class="text-center display-4 my-4">File Uploads</h1>
+      <form action="/admin/new" method="post" enctype="multipart/form-data">
+        <div class="custom-file mb-3">
+          <label for="file" class="custom-file-label">Choose File</label>
+          <input type="file" name="file" id="file" class="custom-file-input" />
+
+          <input
+            type="text"
+            name="title"
+            class="custom-file-input"
+            placeholder="Name of file"
+          />
+          <textarea
+            name="description"
+            rows="3"
+            placeholder="Description"
+          ></textarea>
+          <div class="form">
+            <label for="subscriptionType">Choose Subscription Type:</label>
+            <select id="subscriptionType" name="subscriptionType">
+              <option value="free">Free</option>
+              <option value="vip">VIP</option>
+              <option value="premium">Premium</option>
+            </select>
+          </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+      </form>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer.ejs %>

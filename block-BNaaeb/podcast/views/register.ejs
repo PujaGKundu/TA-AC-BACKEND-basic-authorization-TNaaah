@@ -1,0 +1,29 @@
+<% include partials/header.ejs %>
+
+<div class="container">
+  <form action="/register" method="post">
+    <h3>Register</h3>
+    <input type="text" name="name" placeholder="Enter Name" />
+    <input type="email" name="email" placeholder="Enter Email" />
+    <input type="password" name="password" placeholder="Password" />
+    <div class="form">
+      <label for="type">Choose Account Type:</label>
+      <select id="type" name="type">
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+      </select>
+    </div>
+    <div class="form">
+      <label for="subscription">Choose Subscription Type:</label>
+      <select id="subscription" name="subscription">
+        <option value="free">Free</option>
+        <option value="vip">VIP</option>
+        <option value="premium">Premium</option>
+      </select>
+    </div>
+
+    <button>Submit Details</button>
+  </form>
+</div>
+
+<% include partials/footer.ejs %>
